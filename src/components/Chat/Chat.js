@@ -61,6 +61,7 @@ function Chat ({location}) {
             <div className="container">
                 <InfoBar room={room} />
                 <MessagesBox messages={messages} name={name}/>
+                
                 <InputBox message={message} setMessage={setMessage} sendMessage={sendMessage} />
                 <TextContainer   />
             </div>

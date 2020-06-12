@@ -1,0 +1,99 @@
+html, body {
+  font-family:
+  "HelveticaNeue-Light",
+  "Helvetica Neue Light",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  "Lucida Grande",
+  sans-serif;
+  padding: 0;
+  margin: 0;
+}
+  
+#root {
+    height: 100vh;
+}
+  
+* {
+  box-sizing: border-box;
+}
+  
+.OuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #000000;
+}
+  
+.InnerContainer {
+  width: 65%;
+  background-color: #000000;
+  padding: 40px;
+}
+
+
+.heading {
+  color: white;
+  font-size: 3em;
+  padding-bottom: 50px;
+  /* border-bottom: 2px solid white; */
+}
+
+.title {
+  color: white;
+  font-size: 200%;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+  
+.loginInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  width: 60%;
+  color: #fff;
+
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+  
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgba(34, 216, 77, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: 50%;
+}
+  
+.mt-50 {
+  margin-top: 50px;
+}
+
+.joinInput:focus, button:focus {
+  outline: 0;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .OuterContainer {
+    height: 100%;
+  }
+
+  .InnerContainer {
+    width: 90%;
+  } 
+
+  .loginInput {
+    width: 100%;
+
+  }
+}
+  
