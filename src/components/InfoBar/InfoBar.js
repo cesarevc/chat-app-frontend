@@ -11,7 +11,7 @@ function InfoBar ({ room }) {
     return (
         <div className="infoBar">
             <div className="leftInnerContainer">
-                <img className="onlineIcon" src={onlineIcon} alt="online" />
+                {/* <img className="onlineIcon" src={onlineIcon} alt="online" /> */}
                 <h3>{room} room</h3>
             </div>
             <div className="rightInnerContainer">
