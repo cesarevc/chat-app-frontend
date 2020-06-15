@@ -23,6 +23,7 @@ function Chat ({location}) {
 
     
     useEffect(() => {
+
         const { name, room } = queryString.parse(location.search);
     
         socket = io(ENDPOINT);
@@ -31,15 +32,16 @@ function Chat ({location}) {
         setName(name)
     
         socket.emit('join', { name, room }, (error) => {
-          if(error) {
-            alert(error);
-          }
+            if(error) {
+                alert(error);
+            }
         });
-      }, [ENDPOINT, location.search]);
+    }, [ENDPOINT, location.search]);
+
 
     useEffect(() => {
-        socket.on('message', message => {
-          setMessages(messages => [ ...messages, message ]);
+        socket.on('message', mssg => {
+          setMessages(messages => [ ...messages, mssg ]);
         });
         
         socket.on("roomData", ({ users }) => {
@@ -48,15 +50,11 @@ function Chat ({location}) {
     }, []);
 
 
-
-    
-
-
     const sendMessage = (e) => {
         e.preventDefault();
 
         if(message) {
-            socket.emit('sendMessage', message, () => setMessage('') );            
+            socket.emit('send-message', message, () => setMessage('') );            
         }
     }
 
@@ -67,9 +65,10 @@ function Chat ({location}) {
                 <InfoBar room={room} />
                 <MessagesBox messages={messages} name={name}/>
                 <InputBox message={message} setMessage={setMessage} sendMessage={sendMessage} />
-                {/* <TextContainer   /> */}
             </div>
-
+            <div className="container-text" >
+                <TextContainer users={users}  />
+            </div>
         </div>
     );
 }

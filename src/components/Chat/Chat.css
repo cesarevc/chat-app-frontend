@@ -1,9 +1,10 @@
 .outerContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
   height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 
 .container {
@@ -16,8 +17,15 @@
   width: 98%;
 }
 
+.container-text {
+  
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .outerContainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
   }
 

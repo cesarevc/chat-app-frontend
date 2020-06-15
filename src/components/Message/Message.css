@@ -26,13 +26,21 @@
     margin-top: 3px;
   }
   
-  .sentText {
-    display: flex;
-    align-items: center;
-    font-family: Helvetica;
-    color: #828282;
-    letter-spacing: 0.3px;
-  }
+.sentText {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica;
+  color: #a6a5a9;
+  letter-spacing: 0.3px;
+}
+
+.receivedText {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica;
+  color: #48b868;
+  letter-spacing: 0.3px;
+}
   
   .pl-10 {
     padding-left: 10px;
@@ -58,8 +66,8 @@
     color: #353535;
   }
   
-  .backgroundBlue {
-    background: #0d0d0e;
+  .backgroundMessage {
+    background: #48b868;
   }
   
   .backgroundLight {

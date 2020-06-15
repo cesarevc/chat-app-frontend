@@ -22,6 +22,7 @@
   margin-right: 3%;
 }
   
-.onlineIcon {
-  margin-right: 5%;
+h3 {
+  text-transform: uppercase;
+  font-variant: small-caps;
 }
