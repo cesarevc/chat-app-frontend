@@ -1,9 +1,8 @@
 import React from 'react';
 
 import closeIcon from '../../icons/closeIcon.png';
-import onlineIcon from '../../icons/onlineIcon.png';
 // styles
-import './InfoBar.css'
+import './InfBar.css'
 
 
 function InfoBar ({ room }) {
