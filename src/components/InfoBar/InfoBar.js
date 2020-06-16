@@ -2,7 +2,7 @@ import React from 'react';
 
 import closeIcon from '../../icons/closeIcon.png';
 // styles
-import './InfBar.css'
+import './InfoBar.css'
 
 
 function InfoBar ({ room }) {
