@@ -4,7 +4,6 @@ import './TextContainer.css';
 
 function TextContainer ({ users }) {
 
-    console.log("LOS US", users)
     return (
         <div className="textContainer">
             <div>
